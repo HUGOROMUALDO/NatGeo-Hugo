@@ -49,10 +49,18 @@ nav.menu{
     
 }
 .link-search{
-    display:none;
+    height: 30px;
+    /*display:none;*/
+    position: sticky;
+    top:500px;
 }
 .link-news{
-    display:none;
+    height: 30px;
+    /*display:none;*/
+    position: sticky;
+    top:500px;
+    text-decoration:underline  #ffc300;
+    
 }
 .link-subs{
     margin-right: 20px;
@@ -63,9 +71,7 @@ nav.menu{
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.link-menu{
-    display:none;
-}
+
 .link-angle{
 
 }
@@ -73,6 +79,7 @@ nav.menu{
 header{
     height: 150px;
     text-align: center;
+    margin-top: 60px;
 }
 /*h1*/
 h1{
@@ -100,10 +107,11 @@ header .borde{
 .main-news .img-queen{
     height: auto;
     width: 100%;
+    margin-top: 40px;
 }
 .main-news-text{
     position: absolute;
-    top:200px;
+    top:300px;
     left:30px;
 }
 .main-news-text h3{
@@ -123,22 +131,22 @@ header .borde{
 .main-news-text .read-btn{
     text-transform: uppercase;
     color: white;
-    margin: 10px auto;
+
 }
 
 /*secondary-news*/
 .secondary-news{
-margin-top: 0px;
+margin-top: 1px;
 }
 .secondary-news img{
-    height: auto;
+    height: 450px;
     width: 100%;
 }
 .secondary-news-text{
     background-color: white;
     color: black;
     margin-top: -5px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 30px;
     font-weight: bold;
 }
@@ -176,30 +184,84 @@ margin-top: 0px;
     margin-top: -5px;
     margin-bottom: 20px;
     padding: 30px;
+    float: right;
 }
 .menu-uno-text h3{
     color:white;
     text-transform: uppercase;
     font-size: 18px;
+    margin: 4px auto;
+    
 }
 .menu-uno-text p{
     font-size: 17px;
     font-weight: bold;
     color: white;
-    font-family: sans-serif;
+    font-family: sans-serif;.
+    
+   
 }   
 .menu-uno img{
-    height: 90px;
+    height: 80px;
     width: 100px;
+    float: left;
+    margin: 8px auto;
 }
 
 
+/*contenedores*/
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#Container1{
+    width: 70%;
+    float: right;
+    box-sizing: border-box;
+}
+#Container2{
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 
 /*RESPONSIVE*/
-@media(max-width:768px){
+@media screen and (max-width:800px){
   
+    #Container1{
+        width: 100%;
+    }
+    #Container2{
+        width: 100%;
+    }
+    .logo{
+        display:none;   
+    }
+
+    .link-search{
+    display:none;
+    }
+    .link-news{
+    display:none;
+    }
+    .link-menu{
+        
+        display:none;
+        
+    }
+
+    
+}
+@media screen and (min-width:800px){
     .logo-border{
+        display:none;   
+    }
+    .main-news-text{
         position: absolute;
+        top:700px;
+        left:30px;
     }
 
     
