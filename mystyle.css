@@ -103,16 +103,27 @@ header .borde{
 }
 .main-news-text{
     position: absolute;
-    top:230px;
+    top:200px;
     left:30px;
 }
-.main-new-text h3{
-    font-size: 30px;
+.main-news-text h3{
+    font-size: 20px;
     color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:10px auto;
+}
+.main-news-text p{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin:10px auto;
+
 }
 .main-news-text .read-btn{
     text-transform: uppercase;
     color: white;
+    margin: 10px auto;
 }
 
 /*secondary-news*/
@@ -144,16 +155,16 @@ margin-top: 0px;
 }
 
 /*menu*/
-.menu .borde{
+.borde{
     border-bottom: 30px solid #ffd700;
     width: .5%;
     margin:60px auto;
     display: flex;
     position: relative;
 }
-.menu .menu-list{
+.menu-list{
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     text-transform: uppercase;
     margin-top: -5px;
     margin-bottom: 20px;
@@ -172,12 +183,15 @@ margin-top: 0px;
     font-size: 18px;
 }
 .menu-uno-text p{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     color: white;
-    font-family: times new 'Times New Roman';
+    font-family: sans-serif;
 }   
-
+.menu-uno img{
+    height: 90px;
+    width: 100px;
+}
 
 
 
